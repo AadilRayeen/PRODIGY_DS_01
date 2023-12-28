@@ -7,7 +7,7 @@ data = {'Name' : ['Aadil', 'Pratik', 'Aman', 'Alam', 'Jahanvi', 'Janhvi','Saanvi
 
 df = pd.DataFrame(data)
 
-#Graph for 
+#Graph for Gender Distrbution
 gender_counts = df['Gender'].value_counts()
 
 plt.bar(gender_counts.index, gender_counts.values, color=['blue', 'pink'])
@@ -16,7 +16,7 @@ plt.xlabel('Gender')
 plt.ylabel('Count')
 plt.show()
 
-# Counting AGE 
+# Graph for Age Distrbution
 age_counts = df['Age'].value_counts()
 age_counts = age_counts.sort_index()
 
